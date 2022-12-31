@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-color:  linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    --ff-primary: 'DM Sans', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+    --ff-tertiary: 'Dancing Script', cursive;
+    --fc-primary: #34355B;
+    
+    
+}
+
+
+body{
+    background-image: var(--bg-color);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	background-size: 200% 200%;
+    animation: focusbg 8s ease infinite;
+    
+}
+
+
+.hide{
+    display: none;
+}
+
+.container, .container2{
+    margin: auto;
+    text-align: center;
+    
+    width: 42.8rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2.0rem 5.0rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+
+    
+    margin-top: 22.0rem;
+    padding: 5.6rem;
+    
+}
+
+.container h1, .container p{
+    padding-bottom: 2rem;
+}
+
+h1{
+    font-family: var(--ff-secondary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    
+    color: var(--fc-primary);
+}
+
+.container img{
+    cursor: pointer;
+    
+}
+
+.container img:hover{
+    
+    animation:  shake .3s .1s ;
+}
+
+.container p{
+    font-family: var(--ff-primary);
+    font-size: 1.6rem;
+    line-height: 2.3rem;  
+    
+    color:  #34355B;
+}
+
+.message{
+    margin-top: 2.5rem;
+    padding: 1.0rem;
+    gap: 1.0rem;
+    width: 29.3rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    
+}
+
+.message p{
+    font-family: var(--ff-tertiary);
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+}
+
+#scope{
+    font-family: var(--ff-tertiary);
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    
+    animation: upToDown 1.3s;
+}
+
+#btn{
+    background: #FF9500;
+    border-radius: 4px;
+    width: 17.4rem;
+    padding: 1.6rem;
+    
+    font-family: var(--ff-primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.0rem;  
+    cursor: pointer;
+}
+
+@keyframes shake{
+    0% {margin-right: 0;}
+    25% {margin-right: 20px;}
+    50% {margin-right: 0;}
+    75% {margin-right: -17px;}
+    100% {margin-right: 10;}
+    
+}
+
+
+
+@keyframes upToDown{
+    0%{
+        transform: translateY(75px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes focusbg {
+        0% {
+            background-position: 0% 25%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+/* media queries */
+@media (max-width: 425px){
+
+    .container, .container2{
+        width: 38rem;
+    }
+
+    img{
+        width: 20rem;
+    }
+    
+
+    
+}
