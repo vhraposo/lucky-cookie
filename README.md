@@ -16,7 +16,7 @@
 - Linear gradient - css 
 
 
-Deploy: https://vhraposo.github.io/guessing-game/
+Deploy: https://lucky-cookie.vercel.app/
 
 Preview: 
 ![preview](https://user-images.githubusercontent.com/69219137/210119627-5f7d9587-4b3c-4e49-9f4b-e2121ea6be2b.JPG)
